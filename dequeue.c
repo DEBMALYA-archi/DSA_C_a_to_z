@@ -11,16 +11,16 @@ int dequeue()// check underflow...1st check
         printf("the queue is empty");
         return 0;
     }
-    
-    data=a[front]// deleat the data
-    if (front == rear)
-    {
-        front =rear -1;
-    }
-    else
-    {
-        front=front-1
-    }
-    return data;
-    
+data = a[front];
+
+if (front == rear)
+{
+    front = rear = -1;
+}
+else
+{
+    front++;
+}
+
+return data;
 }
